@@ -1,16 +1,21 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-export default class Button extends Component{
-  constructor(){
-    super()
-  }
-  render(){
-    return (
-      <button type='button'>这是一个来自Button的组件</button>
-    )
-  }
+export default class Button extends Component {
+	constructor(props) {
+		super(props);
+	}
+	render() {
+		console.log('Button 组件更新了');
+		return <button type="button">{this.props.name}</button>;
+	}
 }
-const Nav = function(){
-  return (<div>Nav</div>)
-}
-export {Nav}
+// 函数 的组件
+const Nav = function(props) {
+	return (
+		<div style={{ color: 'white', background: 'black' }}>
+			{props.title}
+			{props.children}
+		</div>
+	);
+};
+export { Nav };

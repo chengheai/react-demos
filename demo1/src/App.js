@@ -43,6 +43,13 @@ class App extends Component {
         >
           {like ? '已赞' : '喜欢'}
         </button>
+        <hr/>
+        <Nav title={'标题'}>
+          <h3>这是一个props传递的1</h3>
+          <h3>这是一个props传递的2</h3>
+          <Button name='test1111'></Button>
+          <Button name='121212121212'></Button>
+        </Nav>
       </div>
     );
   }
