@@ -8,10 +8,10 @@ export default class Input extends Component{
     }
   }
   handleInput(e){
-    // console.log(e.target.value)
-    // console.log(e.target.value.length);
+    console.log(e.target.value)
+    console.log(e.target.value.length);
     if(e.target.value.length > 10) {
-      return;
+      alert(1)
     }
     this.setState({
       value: e.target.value

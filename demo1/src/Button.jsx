@@ -11,6 +11,7 @@ export default class Button extends Component {
 }
 // 函数 的组件
 const Nav = function(props) {
+	console.log('props: ', props);
 	return (
 		<div style={{ color: 'white', background: 'black' }}>
 			{props.title}
