@@ -47,7 +47,6 @@ class App extends Component {
         <Nav title={'标题'}>
           <h1>这是props.children</h1>
           <h3>这是一个props传递的1</h3>
-          <h3>这是一个props传递的2</h3>
           <Button name='test1111'></Button>
           <Button name='121212121212'></Button>
         </Nav>

@@ -7,6 +7,7 @@ class Button extends Component {
 	}
 
 	render() {
+		console.log(this.props);
 		return (
 			<div style={{ color: this.props.themeColor }}>
 				<button style={{ color: this.props.themeColor }} onClick={() => this.props.handleClick('red')}>

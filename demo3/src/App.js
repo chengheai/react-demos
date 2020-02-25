@@ -26,6 +26,7 @@ class App extends React.Component {
   render(){
     return (
       <div>
+      {/* title 设置了propTypes.string 这里传入0将会报错 */}
       <Title title={0}></Title>
       {/* {this.state.isRenderTest ?  <Test /> : '不渲染组件'} */}
       {this.state.isRenderTest ?  <Demo /> : '不渲染组件'}
